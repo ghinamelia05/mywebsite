@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookHaven</title>
+    <link href="style.css" rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-book"></i>
+          <span>BookHaven</span>
+        </div>
+        <div class="nav-links">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#orders" class="nav-link">Orders</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="jumbotron">
+        <h1>Welcome to BookHaven</h1>
+        <p>Your Gateway to Literary Adventures</p>
+      </div>
+
+      <div class="featured-books">
+        <h2>Featured Books</h2>
+        <div class="books-container">
+          <div class="book-card">
+            <div class="book-image">
+              <img src="img/sisitergelapsurga.jpg" alt="Sisi Tergelap Surga" />
+            </div>
+            <h3>Sisi Tergelap Surga</h3>
+            <p class="author">Brian Khrisna</p>
+            <div class="price-info">
+              <span class="price">Rp74.250</span>
+              <span class="discount">25% OFF</span>
+            </div>
+            <span class="original-price">Rp99.000</span>
+          </div>
+
+          <div class="book-card">
+            <div class="book-image">
+              <img src="img/psychology.jpg" alt=" The Psychology Of Money" />
+            </div>
+            <h3>The Psychology of Money</h3>
+            <p class="author">Morgan Housel</p>
+            <div class="price-info">
+              <span class="price">Rp76.500</span>
+              <span class="discount">10% OFF</span>
+            </div>
+            <span class="original-price">Rp85.000</span>
+          </div>
+
+          <div class="book-card">
+            <div class="book-image">
+              <img src="img/kartun.jpg" alt="The Fragant Flower" />
+            </div>
+            <h3>The Fragrant Flower</h3>
+            <p class="author">SAKA MIKAMI</p>
+            <div class="price-info">
+              <span class="price">Rp33.750</span>
+              <span class="discount">25% OFF</span>
+            </div>
+            <span class="original-price">Rp45.000</span>
+          </div>
+
+          <div class="book-card">
+            <div class="book-image">
+              <img src="img/filosofi.jpg" alt="Filosofi Teras" />
+            </div>
+            <h3>Filosofi Teras</h3>
+            <p class="author">HENRY MANAMPIRING</p>
+            <div class="price-info">
+              <span class="price">Rp97.200</span>
+              <span class="discount">10% OFF</span>
+            </div>
+            <span class="original-price">Rp108.000</span>
+          </div>
+
+          <div class="book-card">
+            <div class="book-image">
+              <img src="img/alpha.jpg" alt="Alpha Girls Guide" />
+            </div>
+            <h3>The Alpha Girls Guide</h3>
+            <p class="author">HENRY MANAMPIRING</p>
+            <div class="price-info">
+              <span class="price">Rp85.000</span>
+              <span class="discount">10% OFF</span>
+            </div>
+            <span class="original-price">Rp108.000</span>
+          </div>
+
+          <div class="book-card">
+            <div class="book-image">
+              <img src="img/howto.jpg" alt="How To Respect My Self" />
+            </div>
+            <h3>How To Respect My Self</h3>
+            <p class="author">YOON HONG GYUN</p>
+            <div class="price-info">
+              <span class="price">Rp78.000</span>
+              <span class="discount">10% OFF</span>
+            </div>
+            <span class="original-price">Rp98.000</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="about-container">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <p>
+            We are a little paradise for all readers who are looking for tranquility, inspiration, and adventure in every page of a book. With a diverse collection and a cozy atmosphere, we want every visit to be a meaningful experience for
+            you. Join our community and find happiness among the pages of books.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Orders Section -->
+    <section id="orders" class="section">
+      <div class="orders-container">
+        <h2>Place Your Order</h2>
+        <form class="order-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea id="address" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="book">Book Title</label>
+            <select id="book">
+              <option>Sisi Tergelap Surga</option>
+              <option>The Psychology of Money</option>
+              <option>The Fragrant Flower</option>
+              <option>Filosofi Teras</option>
+              <option>The Alpha Girls Guide</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="quantity">Quantity</label>
+            <input type="number" id="quantity" min="1" required />
+          </div>
+          <button type="submit" class="submit-btn">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Address</h3>
+          <p>Melati Street No.12</p>
+          <p>Flower City</p>
+          <p>Indonesia</p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Phone: (+62) 857-1417-2388</p>
+          <p>Email: info@bookhaven.com</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
